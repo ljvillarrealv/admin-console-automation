@@ -16,13 +16,13 @@ test('Go to Recovery', async () => {
     await passwordRecoveryQuestions.validateRecoveryPage()
 })
 
-test.only('Recovery attemp failed', async () => {
+test('Recovery attemp failed', async () => {
     await t.navigateTo('https://uat-adminconsole-bdb.novopayment.net/recuperarContrasena')
     await passwordRecoveryTasks.attempFailed('788555','noposee@posee.com')
     await passwordRecoveryQuestions.ValidateMessage('invalid')
 })
 
-test.only('Recovery attemp Success', async () => {
+test('Recovery attemp Success', async () => {
     await t.navigateTo('https://uat-adminconsole-bdb.novopayment.net/recuperarContrasena')
     await passwordRecoveryTasks.attempFailed('738955','ljvillarrealv@gmail.com')
     await passwordRecoveryQuestions.ValidateMessage('valid')
