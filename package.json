@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome ./test/password_recovery.js"
+    "test": "testcafe chrome ./test/profile_administration.js"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,4 @@
-import { LoginTasks } from './tasks/login'
+import { LoginTasks } from '../tasks/login'
 import { LoginQuestions } from './questions/login'
 import { MESSAGE_TYPE } from './herlpers/enums/messageType'
 
@@ -16,12 +16,12 @@ test('User nonexistent', async () => {
 })
 
 test ('User Login_exitoso', async ()=> {
-        await loginTasks.loginAttemp('master','Tebca.456')
+        await loginTasks.loginAttemp('LVILLA02','Tebca.456')
         await loginQuestions.validateErrorMessage(MESSAGE_TYPE.userSuccess)
     })
 
 test ('Recovery Password', async () => {
-    await 
+    await loginTasks.recoveryAttemp()
 
 }
 
